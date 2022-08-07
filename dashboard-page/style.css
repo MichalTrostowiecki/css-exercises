@@ -29,6 +29,7 @@ ul {
 
 .sidebar-elements {
   background: skyblue;
+  gap: 20px;
   grid-area: sidebar;
   display: grid;
   grid-template-rows: 1fr repeat(2, 2fr);
@@ -36,16 +37,4 @@ ul {
   "dashboard"
   "nav-bar1"
   "nav-bar2";
-}
-
-.sidebar-top {
-  grid-area: nav-bar1;
-}
-
-.sidebar-bottom {
-  grid-area: nav-bar2;
-}
-
-.main-content {
-  grid-area: main;
 }
