@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+  "sidebar header"
+  "sidebar main";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+  "search-bar userinfo"
+  "greeting buttons";
+}
+
+.sidebar-elements {
+  background: skyblue;
+  grid-area: sidebar;
+  display: grid;
+  grid-template-rows: 1fr repeat(2, 2fr);
+  grid-template-areas:
+  "dashboard"
+  "nav-bar1"
+  "nav-bar2";
+}
+
+.sidebar-top {
+  grid-area: nav-bar1;
+}
+
+.sidebar-bottom {
+  grid-area: nav-bar2;
+}
+
+.main-content {
+  grid-area: main;
+}
