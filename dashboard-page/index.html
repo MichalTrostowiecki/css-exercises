@@ -10,31 +10,81 @@
   <body>
     <div class="main-container">
       <div class="header">
-        <input type="text" value="input" />
-        <p>image goes here</p>
-        <p>image goes here</p>
-        <p>Michal Trostowiecki</p>
-        <p>image goes here</p>
-        <p>Hi there</p>
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+        <div class="header-top">
+          <div class="search">
+            <label for="search">
+              <img
+                class="search-icon"
+                src="./assets/search.png"
+                alt="search"
+                height="40px"
+                width="40px"
+              />
+            </label>
+            <input class="input" type="text" value="input" id="search" />
+          </div>
+          <div class="user-info">
+            <img src="./assets/avatar.png" alt="avatar" />
+            <p>Michal Trostowiecki</p>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="profile">
+            <img src="./assets/man2.png" alt="bigger-avatar" />
+            <div class="greetings">
+              <p>Hi there,</p>
+              <h3>Michal Trostowiecki</h3>
+            </div>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
       </div>
       <div class="sidebar-container">
         <div class="sidebar-elements">
-          <h3>Dashboard</h3>
-          <ul class="sidebar-top">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-          </ul>
-          <ul class="sidebar-bottom">
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+          <h3 class="sidebar-tittle">Dashboard</h3>
+          <div class="sidebar">
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/home.png" alt="home" />
+              <p>Home</p>
+            </a>
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/profile.png" alt="home" />
+              <p>Profile</p>
+            </a>
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/messages.png" alt="home" />
+              <p>Messages</p>
+            </a>
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/history.png" alt="home" />
+              <p>History</p>
+            </a>
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/task.png" alt="home" />
+              <p>Tasks</p>
+            </a>
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/home.png" alt="home" />
+              <p>Communities</p>
+            </a>
+          </div>
+          <ul class="sidebar bottom">
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/home.png" alt="home" />
+              <p>Settings</p>
+            </a>
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/home.png" alt="home" />
+              <p>Support</p>
+            </a>
+            <a href="#" class="side-link">
+              <img src="/assets/sidebar-icons/home.png" alt="home" />
+              <p>Privacy</p>
+            </a>
           </ul>
         </div>
       </div>
